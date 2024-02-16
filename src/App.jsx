@@ -5,6 +5,8 @@ import { current } from "./redux/auth/auth-operations";
 
 import AppRoutes from "./AppRoutes";
 
+// import { ChakraProvider } from '@chakra-ui/react';
+
 function App() {
   const dispatch = useDispatch();
 
@@ -14,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <AppRoutes />
+      {/* <ChakraProvider> */}
+        <AppRoutes />
+      {/* </ChakraProvider > */}
     </div>
   );
 }
