@@ -1,5 +1,5 @@
-import { useState, useMemo, useId } from "react";
-import { nanoid } from "nanoid";
+import { useState, useId } from "react";
+// import { nanoid } from "nanoid";
 
 import styles from "./register-form.module.css";
 
