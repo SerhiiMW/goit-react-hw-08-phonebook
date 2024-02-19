@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
-import styles from "./my-phoneForm-module.css";
+import styles from "./my-phoneForm.module.css";
 
 const INITIAL_STATE = {
     name: "",
@@ -37,11 +37,11 @@ const MyPhoneForm = ({onSubmit}) => {
         <form onSubmit={handleSubmit} className={styles.formPhone}>
             <div className={styles.formGroup}>  
                 <label className={styles.phoneLabel} htmlFor={nameId}>Name</label>
-                <input value={name} type="text" name="name" required onChange={handleChange} id={nameId} placeholder="" />
+                <input className={styles.phoneInput} value={name} type="text" name="name" required onChange={handleChange} id={nameId} placeholder="" />
             </div>
             <div className={styles.formGroup}>
                 <label className={styles.phoneLabel} htmlFor={numberId}>Number</label>
-                <input value={number} type="tel" name="number" required onChange={handleChange} id={numberId} placeholder="" />
+                <input className={styles.phoneInput} value={number} type="tel" name="number" required onChange={handleChange} id={numberId} placeholder="" />
             </div>
             <button className={styles.btnSubmit} type="submit">Add contact</button>
         </form>

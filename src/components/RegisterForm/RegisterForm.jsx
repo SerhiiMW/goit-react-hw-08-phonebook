@@ -39,7 +39,7 @@ const RegisterForm = ({ onSubmit }) => {
     const { name, email, password } = state;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className={styles.registerForm} onSubmit={handleSubmit}>
             <div className={styles.block}>
                 <label htmlFor={nameId}>Name:</label>
                 <input value={name} onChange={handleChange} name="name" id={nameId} required />
@@ -52,7 +52,7 @@ const RegisterForm = ({ onSubmit }) => {
                 <label htmlFor={passwordId}>Password:</label>
                 <input value={password} onChange={handleChange} type="password" name="password" id={passwordId} required />
             </div>
-            <button type="submit">Register</button>
+            <button className={styles.btnRegister} type="submit">Register</button>
         </form>
     )
 }

@@ -1,15 +1,9 @@
-// import MyBooks from "../../components/MyBooks/MyBooks";
-// import AllMyBooks from "../../components/AllMyBooks/AllMyBooks";
-// import MyFavoriteBooks from "../../components/MyFavoriteBooks/MyFavoriteBooks";
 import MyPhone from "components/MyPhone/MyPhone";
+import styles from './contacts-page.module.css'
 
 const ContactsPage = ()=> {
     return (
-        <div>
-            {/* <h1>My books page</h1>
-            <MyBooks />
-            <AllMyBooks />
-            <h2>My Favorite books</h2> */}
+        <div className={styles.ContactsPageWrapper}>
             <MyPhone />
         </div>
     )

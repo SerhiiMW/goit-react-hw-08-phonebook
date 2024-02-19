@@ -36,7 +36,7 @@ const LoginForm = ({ onSubmit }) => {
     const { email, password } = state;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className={styles.loginForm} onSubmit={handleSubmit}>
             <div className={styles.block}>
                 <label htmlFor={emailId}>Email:</label>
                 <input value={email} onChange={handleChange} type="email" name="email" id={emailId} required />
@@ -45,7 +45,7 @@ const LoginForm = ({ onSubmit }) => {
                 <label htmlFor={passwordId}>Password:</label>
                 <input value={password} onChange={handleChange} type="password" name="password" id={passwordId} required />
             </div>
-            <button type="submit">Login</button>
+            <button className={styles.btnLogin} type="submit">Login</button>
         </form>
     )
 }
